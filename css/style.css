@@ -178,7 +178,7 @@ h5 {
 ==================================================*/
 
 .box-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.95);
@@ -336,9 +336,9 @@ h5 {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.96);
+    background: rgba(255,255,255, 0.96);
     z-index: 2;
-    text-align: center;
+    text-align: center;s
     padding: 50px 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -371,7 +371,7 @@ h5 {
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -758,7 +758,7 @@ b i:last-child {
     font-weight: bold;
 }
 
-.portfolio_item .portfolio_item_hover .item_info span {
+/* .portfolio_item .portfolio_item_hover .item_info span {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -785,19 +785,19 @@ b i:last-child {
     font-size: 10px;
     letter-spacing: 2px;
 }
-
-.portfolio_item:hover .portfolio_item_hover {
+*/
+ .portfolio_item:hover .portfolio_item_hover {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-}
-
+} 
+/*
 .portfolio_item:hover .item_info em,
 .portfolio_item:hover .item_info span {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-}
+} */
 
 .portfolio .categories-grid .categories ul li {
     float: left;
