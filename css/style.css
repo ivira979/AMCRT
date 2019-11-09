@@ -1,8 +1,13 @@
 /*
-* Box Theme
-* Created by : Ahmed Eissa
-* website : www.ahmedessa.net
-* behance : https://www.behance.net/3essa
+* Created by : Irfan Virani
+* 
+*
+*
+* CSS Adopted from:
+*				* Box Theme
+*				* Created by : Ahmed Eissa
+*				* website : www.ahmedessa.net
+*				* behance : https://www.behance.net/3essa
 */
 
 
@@ -758,46 +763,13 @@ b i:last-child {
     font-weight: bold;
 }
 
-/* .portfolio_item .portfolio_item_hover .item_info span {
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;
-    opacity: 0;
-}
 
-.portfolio_item .portfolio_item_hover .item_info em {
-    font-style: normal;
-    display: inline-block;
-    background-color: #C41424;
-    padding: 5px 20px;
-    border-radius: 25px;
-    color: #333;
-    margin-top: 10px;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    -webkit-transition: all .3s ease-in-out .3s;
-    transition: all .3s ease-in-out .3s;
-    opacity: 0;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-*/
  .portfolio_item:hover .portfolio_item_hover {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 } 
-/*
-.portfolio_item:hover .item_info em,
-.portfolio_item:hover .item_info span {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-} */
+
 
 .portfolio .categories-grid .categories ul li {
     float: left;
@@ -822,7 +794,23 @@ b i:last-child {
     padding-top: 55px;
 }
 
+.portfolio-menu-items {
 
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+.portfolio-menu-item {
+	align-content: center;
+}
+
+#wrapper td {
+   vertical-align: middle;
+   text-align: center;
+}
 /* footer
 ==================================================*/
 
