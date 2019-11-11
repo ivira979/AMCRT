@@ -1,13 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-	$errors = '';
-$myemail = 'ISVirani@hotmail.com';
+<?php 
+$errors = '';
+$myemail = 'ISVirani@hotmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['message']))
@@ -25,29 +18,34 @@ $email_address))
 {
     $errors .= "\n Error: Invalid email address";
 }
-	
+
 if( empty($errors))
-
 {
+	$to = $myemail; 
+	$email_subject = "Contact form submission: $name";
+	$email_body = "You have received a new message. ".
+	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
+	
+	$headers = "From: $myemail\n"; 
+	$headers .= "Reply-To: $email_address";
+	
+	mail($to,$email_subject,$email_body,$headers);
+	//redirect to the 'thank you' page
 
-$to = $myemail;
+} 
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Contact form handler</title>
+</head>
 
-$email_subject = "Contact form submission: $name";
-
-$email_body = "You have received a new message. ".
-
-" Here are the details:\n Name: $name \n ".
-
-"Email: $email_address\n Message \n $message";
-
-$headers = "From: $myemail\n";
-
-$headers .= "Reply-To: $email_address";
-
-mail($to,$email_subject,$email_body,$headers);
+<body>
+<!-- This page is displayed only if there is some error -->
+<?php
+echo nl2br($errors);
+?>
 
 
-}
-											  
 </body>
 </html>
