@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'vpe@amcrt.ca';//<-----Put Your email address here.
+$myemail = 'contactform@amcrt.ca';
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['subject']) ||
@@ -25,7 +25,7 @@ if( empty($errors))
 {
 	$to = $myemail; 
 	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
+	" Here are the details:\n Name: $name \n Email: $email_address \n Message: \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
