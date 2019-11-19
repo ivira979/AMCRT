@@ -366,7 +366,7 @@ h5 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: .2em 0;
-    text-transform: capitalize;
+    
 }
 
 .box-primary-nav a {
@@ -390,7 +390,7 @@ h5 {
 
 .box-primary-nav .box-label {
     color: #C41424;
-    text-transform: uppercase;
+   /* text-transform: uppercase; */
     font-weight: 700;
     font-size: 17px;
     margin: 2.4em 0 .8em;
