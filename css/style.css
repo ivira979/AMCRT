@@ -388,7 +388,7 @@ h5 {
     color: #ddd;
 }
 
-.box-primary-nav .box-label {
+.box-primary-nav .<strong>box-label</strong> {
     color: #C41424;
    /* text-transform: uppercase; */
     font-weight: 700;
